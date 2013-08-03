@@ -1,0 +1,10 @@
+decaf/util/concurrent/locks/libactivemq_cpp_la-AbstractOwnableSynchronizer.lo: \
+ decaf/util/concurrent/locks/AbstractOwnableSynchronizer.cpp \
+ decaf/util/concurrent/locks/AbstractOwnableSynchronizer.h \
+ decaf/util/Config.h ../../config.h
+
+decaf/util/concurrent/locks/AbstractOwnableSynchronizer.h:
+
+decaf/util/Config.h:
+
+../../config.h:

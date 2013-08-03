@@ -1,0 +1,8 @@
+decaf/util/libactivemq_cpp_la-Comparator.lo: decaf/util/Comparator.cpp \
+ decaf/util/Comparator.h decaf/util/Config.h ../../config.h
+
+decaf/util/Comparator.h:
+
+decaf/util/Config.h:
+
+../../config.h:

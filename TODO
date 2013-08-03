@@ -1,0 +1,5 @@
+convert all management tools to python instead of php and perl and shell
+keep the monitor interface php 
+
+* Add safe multi instance of KCS with iptables load balancer
+** Make all Engine revet its status by heart beat signal .

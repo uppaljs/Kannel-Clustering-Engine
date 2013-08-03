@@ -1,0 +1,6 @@
+cms/libactivemq_cpp_la-MessageListener.lo: cms/MessageListener.cpp \
+ cms/MessageListener.h cms/Config.h
+
+cms/MessageListener.h:
+
+cms/Config.h:

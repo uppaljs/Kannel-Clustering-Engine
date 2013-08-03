@@ -1,0 +1,14 @@
+TimeStamp    TheadID  Level Function                            Line    Message
+121203170143 D61EE820 1     print_info                          (   18) *********************************************************
+121203170143 D61EE820 1     print_info                          (   19) *        ActiveMQ sender Copyright(C) CEQUENS           *
+121203170143 D61EE820 1     print_info                          (   20) *********************************************************
+121203170143 D61EE820 1     print_info                          (   21) Active MQ IP    : (null)
+121203170143 D61EE820 1     print_info                          (   22) Active MQ Port  : (null)
+121203170143 D61EE820 1     print_info                          (   23) Active MQ Name  : (null)
+
+121203170143 D61EE820 1     print_info                          (   24) Trace Level     : 0
+
+121203170143 D61EE820 1     print_info                          (   25) Start TimeStamp : 121203170143
+121203170143 D61EE820 1     print_info                          (   26) *********************************************************
+121203170143 D61EE820 1     main                                (   60) Initialize ActiveMQ
+121203170143 CFBC9700 1     QueueMessageProc                    (   21) THREAD QueueMessageProc IS UP

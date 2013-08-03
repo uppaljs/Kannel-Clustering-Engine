@@ -1,0 +1,142 @@
++ AppRoot=/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution/
++ . /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/functions.sh
++ case $1 in
++ start sample-smsc-pool
++ AppRoot=/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution/
++ AppRoot=/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution/
++ clean_startup
++ cat /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//config/init_itr
++ rm -f /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/common.conf.conf '/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/\.conf' /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/_configBuilder.py.conf /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/functions.sh.conf /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/KCmgr.py.conf /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/KCmgr.sh.conf /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/sample-smsc-pool.conf /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//runTime/tmp.conf
++ smscPool=sample-smsc-pool
+++ ls sample-smsc-pool
++ for i in '`ls $1`'
+++ echo routesms.links
+++ sed s/.links//
++ kannel_name=routesms
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py routesms
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo Routetelcom.links
+++ sed s/.links//
++ kannel_name=Routetelcom
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py Routetelcom
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo SilverStreet.links
+++ sed s/.links//
++ kannel_name=SilverStreet
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py SilverStreet
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo SitMobile.links
+++ sed s/.links//
++ kannel_name=SitMobile
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py SitMobile
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo SMSCT-Zuhair.links
+++ sed s/.links//
++ kannel_name=SMSCT-Zuhair
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py SMSCT-Zuhair
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo SMSdriver.links
+++ sed s/.links//
++ kannel_name=SMSdriver
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py SMSdriver
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo Starweare.links
+++ sed s/.links//
++ kannel_name=Starweare
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py Starweare
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo stc1.links
+++ sed s/.links//
++ kannel_name=stc1
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py stc1
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo TynTec.links
+++ sed s/.links//
++ kannel_name=TynTec
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py TynTec
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ for i in '`ls $1`'
+++ echo Vectorylink.links
+++ sed s/.links//
++ kannel_name=Vectorylink
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py Vectorylink
+Traceback (most recent call last):
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 122, in <module>
+    ConfigBuild(sys.argv[1])
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 42, in __init__
+    self.build(self.kannel)
+  File "/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py", line 108, in build
+    self.saveIterator()	
+AttributeError: ConfigBuild instance has no attribute 'saveIterator'
++ python /home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution//KCManager/_configBuilder.py Done...

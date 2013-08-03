@@ -1,0 +1,47 @@
+def method6():
+  return ''.join([`num` for num in xrange(loop_count)])
+
+Consider this is the best performance method used for string concatenation. revert to (http://www.skymind.com/~ocrow/python_string/)
+
+Note :
+	All the project used python V 2.6 and assume default send url any changes to the send url will cause maleformed operation
+Consider the url as compiled do not change specially the order of HTTP parameter with out revert to me .
+
+--------------------------------------------------------------------------------------------------------------------------
+check those plz:-  
+----------------
+ aws-apitools-as                  noarch                 1.0.61.1-1.0.amzn1                          amzn-updates                 6.3 M
+ aws-apitools-ec2                 noarch                 1.6.3.0-1.0.amzn1                           amzn-updates                  13 M
+ aws-apitools-mon                 noarch                 1.0.13.4-1.0.amzn1                          amzn-updates                 6.2 M
+ aws-apitools-rds                 noarch                 1.9.002-1.0.amzn1                           amzn-updates                 6.4 M
+ bind-libs                        x86_64                 32:9.8.2-0.10.rc1.24.amzn1                  amzn-updates                 1.0 M
+ bind-utils                       x86_64                 32:9.8.2-0.10.rc1.24.amzn1                  amzn-updates                 266 k
+ dbus                             x86_64                 1:1.2.24-7.16.amzn1                         amzn-updates                 242 k
+ dbus-libs                        x86_64                 1:1.2.24-7.16.amzn1                         amzn-updates                 141 k
+ kernel-headers                   x86_64                 3.2.29-48.63.amzn1                          amzn-updates                 845 k
+ python-boto  
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------
+Project dir:
+	|_ config : contain kcproject 
+		|_ 1)app.conf ,
+		|_ 2)init_etc_hosts ,
+		|_ 3)init_itr , << "Contain Startup ports values "
+		|_ 4)common.conf << "Template of kannel conf file "
+	|_ KCManager 
+	|_ logs  : KCSolution logs
+	|_ runTime : (Shared dir between all nodes) 
+		|_ 1)config : runtime configs generated from KCmanager
+		|_ 2)logs : kannel running log files
+		|_ 3)stores : kannel running store files
+		|_ 4) itr : config ports iterator 
+	|_ /dev/shm/RT : KC links mapper (may renamed to map_table)
+	|_ /dev/shm/previousRT
+	|_ /dev/shm/* : All app shared data
+	|_Gateway
+		|_MEngine
+		|_Proxy
+		|_QEngine 

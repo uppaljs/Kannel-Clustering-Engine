@@ -1,0 +1,6 @@
+cms/libactivemq_cpp_la-DeliveryMode.lo: cms/DeliveryMode.cpp \
+ cms/DeliveryMode.h cms/Config.h
+
+cms/DeliveryMode.h:
+
+cms/Config.h:

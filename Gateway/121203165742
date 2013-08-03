@@ -1,0 +1,13 @@
+TimeStamp    TheadID  Level Function                            Line    Message
+121203165742 5A82F820 1     print_info                          (   16) *********************************************************
+121203165742 5A82F820 1     print_info                          (   17) *        SR Center v1.0 rev36  Copyright(C) CEQUENS     *
+121203165742 5A82F820 1     print_info                          (   18) *********************************************************
+121203165742 5A82F820 1     print_info                          (   19) Active MQ IP    : (null)
+121203165742 5A82F820 1     print_info                          (   20) Active MQ Port  : (null)
+121203165742 5A82F820 1     print_info                          (   21) Active MQ Name  : (null)
+
+121203165742 5A82F820 1     print_info                          (   22) Trace Level     : 0
+
+121203165742 5A82F820 1     print_info                          (   23) Start TimeStamp : 121203165742
+121203165742 5A82F820 1     print_info                          (   24) *********************************************************
+121203165742 5A82F820 1     main                                (   57) Initialize ActiveMQ

@@ -1,0 +1,821 @@
+<?xml version="1.0"?>
+<gateway>
+<version>Kannel bearerbox version `1.4.3'.
+Build `Aug  6 2012 13:14:11', compiler `4.4.6 20120305 (Red Hat 4.4.6-4)'.
+System Linux, release 2.6.32-279.el6.x86_64, version #1 SMP Fri Jun 22 12:19:21 UTC 2012, machine x86_64.
+Hostname Kannel, IP 127.0.0.1.
+Libxml version 2.7.6.
+Compiled with MySQL 5.1.61, using MySQL 5.1.61.
+Using native malloc.
+</version>
+<status>running, uptime 0d 2h 9m 23s</status>
+	<wdp>
+		<received><total>0</total><queued>0</queued></received>
+		<sent><total>0</total><queued>0</queued></sent>
+	</wdp>
+	<sms>
+		<received><total>8466</total><queued>0</queued></received>
+		<sent><total>11415</total><queued>0</queued></sent>
+		<storesize>1</storesize>
+		<inbound>0.49,0.55,1.09</inbound>
+		<outbound>0.84,0.82,1.47</outbound>
+	</sms>
+	<dlr>
+		<queued>9007</queued>
+		<storage>mysql</storage>
+	</dlr>
+<boxes>
+	<box>
+		<type>smsbox</type>
+		<id>mainbox1</id>
+		<IP>196.2.194.24</IP>
+		<queue>0</queue>
+		<status>on-line 0d 2h 9m 17s</status>
+		<ssl>not installed</ssl>
+	</box></boxes>
+<smscs><count>87</count>
+	<smsc>
+		<name>SMPP:213.158.112.40:3333/3333:egNhtdy1:SMPP</name>
+		<id>link60</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.118.129.59:10003/10003:Bulk77977:77977</name>
+		<id>stc3</id>
+		<status>online 7762s</status>
+		<received>1135</received>
+		<sent>2197</sent>
+		<failed>54</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.118.129.59:10003/10003:Bulk77977:77977</name>
+		<id>stc3</id>
+		<status>online 7762s</status>
+		<received>1097</received>
+		<sent>52</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:97.74.200.130:9090/9090:egyptsms:TST"</name>
+		<id>link10</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>20</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:97.74.200.130:9090/9090:egyptsms:TST"</name>
+		<id>link10</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>2</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:97.74.200.130:9090/9090:egyptsms:TST"</name>
+		<id>link10</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>1</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:97.74.200.130:9090/9090:egyptsms:TST"</name>
+		<id>link10</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:97.74.200.130:9090/9090:egyptsms:TST"</name>
+		<id>link10</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:89.164.98.10:8888/8888:EgyptSMS:TST</name>
+		<id>link5</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.infobip.com:8888/8888:ehAbME:TST"</name>
+		<id>link52</id>
+		<status>online 7762s</status>
+		<received>3</received>
+		<sent>147</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.infobip.com:8888/8888:ehAbME:TST"</name>
+		<id>link52</id>
+		<status>online 7762s</status>
+		<received>170</received>
+		<sent>1</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.infobip.com:8888/8888:ehAbME:TST"</name>
+		<id>link52</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>3</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.infobip.com:8888/8888:EhabAE:TST</name>
+		<id>link1000</id>
+		<status>online 7762s</status>
+		<received>854</received>
+		<sent>2311</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.infobip.com:8888/8888:EhabAE:TST</name>
+		<id>link1000</id>
+		<status>online 7762s</status>
+		<received>2163</received>
+		<sent>856</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7761s</status>
+		<received>4</received>
+		<sent>1371</sent>
+		<failed>4</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>428</received>
+		<sent>28</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>16</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>17</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>10</received>
+		<sent>20</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>294</received>
+		<sent>17</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>15</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>264</received>
+		<sent>13</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>20</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:41.190.248.25:4213/4213:css_blk:SMPP</name>
+		<id>mob1</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>21</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.resalty.net:1485/1485:egynetworks:TST"</name>
+		<id>link9</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp3.resalty.net:10180/10180:egynet:TST"</name>
+		<id>link19</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>775</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:217.52.114.12:9876/9876:egyvf:TST"</name>
+		<id>link12</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:217.52.114.12:9876/9876:egyeti:TST"</name>
+		<id>link122</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>1322</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:62.93.147.250:11000/11000:iB002EGP:3068741001</name>
+		<id>link80</id>
+		<status>online 4538s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp.silverstreet.com:2675/2675:Egyptssms2:TST</name>
+		<id>link71</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp.silverstreet.com:2675/2675:Egyptssms2:TST</name>
+		<id>link71</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.219.23.179:1035/1035:enetwork:TST"</name>
+		<id>link6</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>71</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.219.23.179:1035/1035:enetwork:TST"</name>
+		<id>link6</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>1</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.219.23.179:1035/1035:enetwork:TST"</name>
+		<id>link6</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.35.67.179:950/950:enetwork:TST"</name>
+		<id>link90</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.35.67.179:950/950:enetwork:TST"</name>
+		<id>link90</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.35.67.179:950/950:enetwork2:TST"</name>
+		<id>link92</id>
+		<status>online 7761s</status>
+		<received>15</received>
+		<sent>16</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.35.67.179:950/950:enetwork2:TST"</name>
+		<id>link92</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:64.131.75.57:4357/4357:mj:CMC</name>
+		<id>link93</id>
+		<status>online 7602s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp4.mblox.com:3201/3201:EgyptNetwork:SMPP</name>
+		<id>link77</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp4.mblox.com:0/3201:EgyptNetwork:SMPP</name>
+		<id>link77</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.204.141.77:5518/5518:egypt_network:TST"</name>
+		<id>link4</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.204.141.76:5518/5518:egypt_network:TST"</name>
+		<id>link4</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.204.141.76:5518/5518:egypt_network:TST"</name>
+		<id>link4</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.204.141.76:5518/5518:egy2nd:TST"</name>
+		<id>link44</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.204.141.76:5518/5518:egy2nd:TST"</name>
+		<id>link44</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:196.204.141.76:5518/5518:egy2nd:TST"</name>
+		<id>link44</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:174.143.34.193:7774/7774:egyptsms:0</name>
+		<id>link94</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:174.143.34.193:0/7775:egyptsms:0</name>
+		<id>link94</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:174.143.34.193:7774/7774:egyptsms:0</name>
+		<id>link94</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:174.143.34.193:0/7775:egyptsms:0</name>
+		<id>link94</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp.sitmobile.com:9000/9000:egyptnetwork:29821|59283</name>
+		<id>link35</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:212.100.220.170:1482/1482:egynet:TST"</name>
+		<id>link99</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smsbulk.eg.mobizone.mobi:2351/2351:egy_net_Mobi:TST"</name>
+		<id>link31</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smsbulk.eg.mobizone.mobi:2351/2351:egy_net_Mobi:TST"</name>
+		<id>link31</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:173.192.174.2:8888/8888:egyptsms:TST"</name>
+		<id>link13</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>78</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms:TST</name>
+		<id>link25</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms:TST</name>
+		<id>link25</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms:TST</name>
+		<id>link25</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms:TST</name>
+		<id>link25</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egypsmsfixed:TST</name>
+		<id>link26</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egypsmsfixed:TST</name>
+		<id>link26</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms02:TST</name>
+		<id>link27</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms02:TST</name>
+		<id>link27</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms03:TST</name>
+		<id>link28</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:151.9.87.25:7000/7000:egyptsms03:TST</name>
+		<id>link28</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:121.241.242.102:2345/2345:egyptsms2:TST</name>
+		<id>link20</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp5.routesms.com:2345/2345:egyptnet:TST</name>
+		<id>link23</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:121.241.242.124:2345/2345:egyptneteu:TST</name>
+		<id>link24</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:78.110.226.173:2775/2775:egyptnet22:CMT</name>
+		<id>link40</id>
+		<status>online 7760s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:46.183.25.6:7337/7337:egyptnw01:TST</name>
+		<id>link88</id>
+		<status>online 7762s</status>
+		<received>43</received>
+		<sent>44</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.50:10000/10000:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7762s</status>
+		<received>2</received>
+		<sent>1777</sent>
+		<failed>2</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.50:10001/10001:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>55</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.50:0/10000:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7762s</status>
+		<received>490</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.50:0/10001:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7762s</status>
+		<received>483</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.51:10000/10000:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>97</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.51:10001/10001:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7761s</status>
+		<received>0</received>
+		<sent>51</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.51:0/10000:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7760s</status>
+		<received>488</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:84.23.107.51:0/10001:SMSEG81:BULK</name>
+		<id>mobily</id>
+		<status>online 7762s</status>
+		<received>488</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:178.239.50.40:9999/9999:egyptsms:TST</name>
+		<id>link17</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:178.239.50.40:9999/9999:egyptsms:TST</name>
+		<id>link17</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smpp.hotsms.ps:9999/9999:egyptsms2:TST</name>
+		<id>link16</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:server9.msgtoolbox.com:2775/2775:EgyptNetwork1:TST</name>
+		<id>link73</id>
+		<status>re-connecting</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:server9.msgtoolbox.com:2775/2775:EgyptNetwork1:TST</name>
+		<id>link73</id>
+		<status>online 8s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:server2.msgtoolbox.com:2775/2775:EgyptNetwork2:TST</name>
+		<id>link74</id>
+		<status>online 7759s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smsc6.routotelecom.com:7777/7777:egyptsms:TST</name>
+		<id>link72</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+<smsc>
+		<name>SMPP:smsc6.routotelecom.com:7777/7777:egyptsms:TST</name>
+		<id>link72</id>
+		<status>online 7762s</status>
+		<received>0</received>
+		<sent>0</sent>
+		<failed>0</failed>
+		<queued>0</queued>
+	</smsc>
+</smscs>
+</gateway>

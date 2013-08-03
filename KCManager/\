@@ -1,0 +1,32 @@
+#!/bin/sh
+
+start()
+{
+# Start Remove old Data from the previous run 
+AppRoot='/home/ec2-user/Devel/Cequens-Kannel-Cluster-Solution/'
+cd $AppRoot
+clean_startup
+smscPool=$1
+
+for i in $1
+do 
+	kannel_name=`echo $i | sed 's/.links//'` 
+	python KCManager/_configBuilder.py  $kannel_name
+done 
+
+python _configBuilder.py Done...
+
+}
+
+clean_startup()
+{
+	# revert to the start up 
+		#1 iterator
+		#rm -f $AppRoot/runTime/itr #>> /dev/null
+		cat config/init_itr > runTime/itr
+		#2 host file
+		#3 RAM Desk
+		#4 runTimeConfig
+		rm -f $AppRoot/runTime/*.conf
+		#5 flush routing table and process old rtable_dump
+}

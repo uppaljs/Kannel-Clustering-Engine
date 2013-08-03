@@ -1,0 +1,9 @@
+decaf/security/libactivemq_cpp_la-SecureRandomSpi.lo: \
+ decaf/security/SecureRandomSpi.cpp decaf/security/SecureRandomSpi.h \
+ decaf/util/Config.h ../../config.h
+
+decaf/security/SecureRandomSpi.h:
+
+decaf/util/Config.h:
+
+../../config.h:

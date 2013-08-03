@@ -1,0 +1,8 @@
+activemq/util/libactivemq_cpp_la-Service.lo: activemq/util/Service.cpp \
+ activemq/util/Service.h activemq/util/Config.h ../../config.h
+
+activemq/util/Service.h:
+
+activemq/util/Config.h:
+
+../../config.h:

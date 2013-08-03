@@ -1,0 +1,5 @@
+[ports]
+core-admin-port = 1100
+core-smsbox-port = 1600
+sendsms-port = 2100
+

@@ -1,0 +1,116 @@
+
+
+import socket, select
+import Queue
+import threading
+import urllib2
+import configobj
+# This test reveal very impressive reslult so plz proceeed with it 
+# src http://scotdoyle.com/python-epoll-howto.html
+
+
+"""
+TODOs
+-----
+   1. at sigTerm save the queue to presistent storage then die.
+"""
+QList = [] # Down Links Q
+sms = {}
+Q = Queue.Queue()  # Memory Q between accept socket and send to kannel.
+QD = configobj.ConfigObj( 'config/app.conf' )['application']['q-driver']
+QE = QEngine(QD)
+
+
+#condition = threading.Condition()
+#condition.acquire()
+
+def getRoute(link):
+	rt = configobj.ConfigObj('/dev/shm/RT')
+	if rt.has_key(link) :
+		return rt[link]
+	else :
+		return '_Q'
+def send(sms):
+	_rt = getRoute(sms['link'])
+	if not  _rt == '_Q' :
+		print " urllib2.urlopen(http:// "+ _rt + sms['uri']
+		fd = urllib2.urlopen("http://" + _rt + sms['uri'])
+		if fd.read()[0:4] == 'Sent.' :
+			Q.task_done()	
+			fd.close()
+			return
+		fd.close()
+
+		"""Add to log that link is not sending !!"""		
+		print "Add to log that link (%s) is not sending !!".format(sms['uri'])
+		""" Fire a signal to trigger 1. monIF , 2.  """
+		QList.append(sms['link'])
+		QE.enqueue(sms)
+                with open('/dev/shm/QList.pickle', 'wb') as f:
+                	pickle.dump(entry, f)
+		return
+
+def callback():
+	while True :
+		if not Q.empty(): pass
+	#		condition.wait()
+		sms = Q.get()
+		if not sms['link'] in ( 'link1','ignore') or not sms['link'] in QList:
+			send(sms)
+			return
+		if sms['link'] in QList:
+			QE.enqueue(sms)
+			with open('/dev/shm/QList.pickle', 'rb') as f:  # The below step is just to update QList var in case of any changes
+				QList = pickle.load(f) 
+	
+send_thread = threading.Thread(target=callback)
+send_thread.daemon = True
+send_thread.start()
+
+response = b'Sent.'
+
+serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+serversocket.bind(('0.0.0.0', 8080))
+serversocket.listen(20)
+serversocket.setblocking(0)
+
+epoll = select.epoll()
+epoll.register(serversocket.fileno(), select.EPOLLIN)
+
+try:
+	connections = {}; requests = {}; responses = {}
+	while True:
+		events = epoll.poll(1)
+		for fileno, event in events:
+			if fileno == serversocket.fileno():
+				connection, address = serversocket.accept()
+				connection.setblocking(0)
+				epoll.register(connection.fileno(), select.EPOLLIN)
+				connections[connection.fileno()] = connection
+				requests[connection.fileno()] = b''
+				responses[connection.fileno()] = response
+			elif event & select.EPOLLIN:
+				requests[fileno] += connections[fileno].recv(1024)
+				#connections[fileno].send(responses[fileno])
+				epoll.modify(fileno, select.EPOLLOUT)
+				sms['uri'] = requests[fileno].split()[1] 
+				sms['link'] = str(requests[fileno])[58:69].split('&')[0]
+				Q.put(sms)
+				#condition.notifyAll()
+			elif event & select.EPOLLOUT:
+				byteswritten = connections[fileno].send(responses[fileno])
+				responses[fileno] = responses[fileno][byteswritten:]
+				if len(responses[fileno]) == 0:
+					epoll.modify(fileno, 0)
+					connections[fileno].shutdown(socket.SHUT_RDWR)
+			elif event & select.EPOLLHUP:
+				epoll.unregister(fileno)
+				connections[fileno].close()
+				del connections[fileno]
+finally:
+	epoll.unregister(serversocket.fileno())
+	epoll.close()
+	serversocket.close()
+	# send all Q data to QEngine .
+

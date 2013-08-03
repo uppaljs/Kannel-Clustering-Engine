@@ -1,0 +1,9 @@
+decaf/net/libactivemq_cpp_la-SocketOptions.lo: \
+ decaf/net/SocketOptions.cpp decaf/net/SocketOptions.h \
+ decaf/util/Config.h ../../config.h
+
+decaf/net/SocketOptions.h:
+
+decaf/util/Config.h:
+
+../../config.h:

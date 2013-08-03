@@ -1,0 +1,12 @@
+decaf/internal/net/libactivemq_cpp_la-SocketFileDescriptor.lo: \
+ decaf/internal/net/SocketFileDescriptor.cpp \
+ decaf/internal/net/SocketFileDescriptor.h decaf/util/Config.h \
+ ../../config.h decaf/io/FileDescriptor.h
+
+decaf/internal/net/SocketFileDescriptor.h:
+
+decaf/util/Config.h:
+
+../../config.h:
+
+decaf/io/FileDescriptor.h:

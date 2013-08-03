@@ -1,0 +1,9 @@
+activemq/util/libactivemq_cpp_la-ServiceListener.lo: \
+ activemq/util/ServiceListener.cpp activemq/util/ServiceListener.h \
+ activemq/util/Config.h ../../config.h
+
+activemq/util/ServiceListener.h:
+
+activemq/util/Config.h:
+
+../../config.h:

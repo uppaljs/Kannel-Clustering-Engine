@@ -1,0 +1,8 @@
+decaf/lang/libactivemq_cpp_la-ThreadGroup.lo: decaf/lang/ThreadGroup.cpp \
+ decaf/lang/ThreadGroup.h decaf/util/Config.h ../../config.h
+
+decaf/lang/ThreadGroup.h:
+
+decaf/util/Config.h:
+
+../../config.h:
